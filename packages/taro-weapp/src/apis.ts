@@ -5,6 +5,9 @@ import { needPromiseApis } from './apis-list'
 declare const wx: any
 
 export function initNativeApi (taro) {
+  // eslint-disable-next-line
+  console.log('initNativeApi------------111', taro)
+
   processApis(taro, wx, {
     needPromiseApis,
     modifyApis (apis) {
@@ -13,14 +16,16 @@ export function initNativeApi (taro) {
     },
     transformMeta (api: string, options: Record<string, any>) {
       if (api === 'showShareMenu') {
-        options.menus = options.showShareItems?.map(item => item === 'wechatFriends' ? 'shareAppMessage' : item === 'wechatMoment' ? 'shareTimeline' : item)
+        options.menus = options.showShareItems?.map((item) =>
+          item === 'wechatFriends' ? 'shareAppMessage' : item === 'wechatMoment' ? 'shareTimeline' : item
+        )
       }
 
       return {
         key: api,
-        options
+        options,
       }
-    }
+    },
   })
   taro.cloud = wx.cloud
   taro.getTabBar = function (pageCtx) {

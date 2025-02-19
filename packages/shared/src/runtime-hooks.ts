@@ -123,6 +123,7 @@ export class TaroHooks<T extends Record<string, TFunc> = any> extends Events {
   constructor (hooks: Record<keyof T, Hook>, opts?) {
     super(opts)
     this.hooks = hooks
+    // 初始化的，如果 initial 是函数，则绑定好事件。
     for (const hookName in hooks) {
       const { initial } = hooks[hookName]
       if (isFunction(initial)) {
@@ -139,6 +140,9 @@ export class TaroHooks<T extends Record<string, TFunc> = any> extends Events {
   tap<K extends Extract<keyof T, string>> (hookName: K, callback: T[K] | T[K][]) {
     const hooks = this.hooks
     const { type, initial } = hooks[hookName]
+    // eslint-disable-next-line
+    // console.log('hooks tap event', hookName, callback)
+
     if (type === HOOK_TYPE.SINGLE) {
       this.off(hookName)
       this.on(hookName, isFunction(callback) ? callback : callback[callback.length - 1])
@@ -262,6 +266,7 @@ export const hooks = new TaroHooks<ITaroHooks>({
     return this.call('getMiniLifecycle', defaultMiniLifecycle)
   }),
 
+  // 增加监听。
   getLifecycle: TaroHook(HOOK_TYPE.SINGLE, (instance, lifecycle) => instance[lifecycle]),
 
   modifyRecursiveComponentConfig: TaroHook(HOOK_TYPE.SINGLE, (defaultConfig) => defaultConfig),

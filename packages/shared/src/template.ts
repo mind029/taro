@@ -150,6 +150,7 @@ export class BaseTemplate {
                 propValue = `i.${componentAlias.value}?i.${componentAlias.value}.length:-1`
               }
 
+              // 这里就是属性绑定动态值的方式。
               propValue = this.supportXS
                 ? `xs.b(i.${propAlias},${propValue})`
                 : `i.${propAlias}===undefined?${propValue}:i.${propAlias}`
@@ -328,6 +329,7 @@ export class BaseTemplate {
       child = this.modifyLoopBody(child, comp.nodeName)
     }
 
+    // 如果属于 voidElements（不需要渲染子节点的元素） 返回空字符串，即可达到不渲染子节点的效果
     let children = this.voidElements.has(comp.nodeName)
       ? ''
       : `

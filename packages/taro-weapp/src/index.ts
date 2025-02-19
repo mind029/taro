@@ -14,6 +14,7 @@ export default (ctx: IPluginContext, options: IOptions) => {
     name: 'weapp',
     useConfigName: 'mini',
     async fn ({ config }) {
+      // 49、执行 weapp 注册的 fn 函数
       const program = new Weapp(ctx, config, options || {})
       await program.start()
     }

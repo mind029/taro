@@ -41,7 +41,14 @@ export function mergePlugins (dist: PluginItem[], src: PluginItem[]) {
   }
 }
 
-// getModuleDefaultExport
+/**
+ * 把预设/插件文件路径 转换为 插件对象，即包含 apply 方法。
+ * @param root 项目根目录
+ * @param args 预设/插件配置
+ * @param type 插件类型
+ * @param skipError 是否跳过报错
+ * @returns 插件对象
+ */
 export function resolvePresetsOrPlugins (root: string, args: IPluginsObject, type: PluginType, skipError?: boolean): IPlugin[] {
   // 全局的插件引入报错，不抛出 Error 影响主流程，而是通过 log 提醒然后把插件 filter 掉，保证主流程不变
   const resolvedPresetsOrPlugins: IPlugin[] = []
@@ -67,6 +74,7 @@ export function resolvePresetsOrPlugins (root: string, args: IPluginsObject, typ
         process.exit(1)
       }
     }
+    // 20、resolvePresetsOrPlugins 会把每一项封装成 对象，把相关变量 和 apply 方法 封装在一起，用于后续的时候再调用。
     const resolvedItem = {
       id: fPath,
       path: fPath,
@@ -74,6 +82,7 @@ export function resolvePresetsOrPlugins (root: string, args: IPluginsObject, typ
       opts: args[item] || {},
       apply () {
         try {
+          // 通过 require 的 方式 获取 插件的 默认导出
           return getModuleDefaultExport(require(fPath))
         } catch (error) {
           console.error(error)

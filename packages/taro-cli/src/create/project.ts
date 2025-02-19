@@ -77,6 +77,9 @@ export default class Project extends Creator {
     )
   }
 
+  /**
+   * 这里 init 函数是重写 Creator 类中的一个方法，用于初始化项目，在 new Project() 就会被 Creator 构造函数调用。
+   */
   init () {
     clearConsole()
     console.log(chalk.green('Taro 即将创建一个新项目!'))
@@ -84,6 +87,12 @@ export default class Project extends Creator {
     console.log()
   }
 
+  /**
+   * 根据用户回答，得到模板参数，然后生成对应文件。
+   * 1. this.ask() 询问用户，得到创建项目各种配置。
+   * 2. this.write() 根据用户回答，生成对应文件。
+   * packages/taro-cli/src/presets/commands/init.ts  命令行注册的 hooks，回调 fn 中调用
+   */
   async create () {
     try {
       const answers = await this.ask()
@@ -96,6 +105,10 @@ export default class Project extends Creator {
     }
   }
 
+  /**
+   * 询问用户，得到创建项目各种配置函数
+   * @returns
+   */
   async ask () {
     let prompts: Record<string, unknown>[] = []
     const conf = this.conf
@@ -439,13 +452,23 @@ export default class Project extends Creator {
     return newTemplateChoices
   }
 
+  /**
+   * 根据用户回答，生成对应文件。
+   * @param cb
+   */
   write (cb?: () => void) {
     this.conf.src = SOURCE_DIR
     const { projectName, projectDir, template, autoInstall = true, framework, npm } = this.conf as IProjectConf
-    // 引入模板编写者的自定义逻辑
+
+    // 每个自定义模板都都包含一个 packages/taro-cli/templates/default/template_creator.js 文件。
+    // 引入模板编写者的自定义逻辑 "/github.com/NervJS/taro/packages/taro-cli/templates/default"
     const templatePath = this.templatePath(template)
+
+    // 得到模版处理 handle 文件路径，然后加载的得到 handler 函数
     const handlerPath = path.join(templatePath, TEMPLATE_CREATOR)
     const handler = fs.existsSync(handlerPath) ? require(handlerPath).handler : {}
+
+    // 这个 createProject rust 的函数。
     createProject({
       projectRoot: projectDir,
       projectName,

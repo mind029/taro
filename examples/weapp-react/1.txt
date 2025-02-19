@@ -1,0 +1,35 @@
+
+> weapp-react@1.0.0 build
+> /Users/mind/Workspace/github.com/NervJS/taro/packages/taro-cli/bin/taro build --type weapp
+
+👽 Taro v3.6.35
+
+Events on getMiniLifecycle [Function (anonymous)] undefined
+Events on getMiniLifecycleImpl [Function (anonymous)] undefined
+Events on getLifecycle [Function (anonymous)] undefined
+Events on modifyRecursiveComponentConfig [Function (anonymous)] undefined
+Events on getPathIndex [Function (anonymous)] undefined
+Events on getEventCenter [Function (anonymous)] undefined
+Events on isBubbleEvents [Function (anonymous)] undefined
+Events on getSpecialNodes [Function (anonymous)] undefined
+Events on proxyToRaw [Function (anonymous)] undefined
+Events on modifyMpEventImpl [Function (anonymous)] undefined
+Events on dispatchTaroEvent [Function (anonymous)] undefined
+Events on modifyTaroEventReturn [Function (anonymous)] undefined
+Tips:
+1. 建议开启持久化缓存功能，能有效提升二次编译速度，详情请参考: https://docs.taro.zone/docs/config-detail#cache。
+
+
+⚠️ Warnings: 
+
+[7mAssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).[27m
+This can impact web performance.
+Assets: 
+  taro.js (373 KiB)
+    at Generator.next (<anonymous>)
+
+[7mNoAsyncChunksWarning: webpack performance recommendations: [27m
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+    at Generator.next (<anonymous>)
+

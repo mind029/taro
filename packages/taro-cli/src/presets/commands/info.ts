@@ -5,6 +5,9 @@ import { getPkgVersion } from '../../util'
 
 import type { IPluginContext } from '@tarojs/service'
 
+/**
+ * 获取项目信息
+ */
 export default (ctx: IPluginContext) => {
   ctx.registerCommand({
     name: 'info',
@@ -36,6 +39,7 @@ export default (ctx: IPluginContext) => {
 
 async function info (options, ctx) {
   const npmPackages = ctx.helper.UPDATE_PACKAGE_LIST.concat(['react', 'react-native', 'expo', 'taro-ui'])
+  // envinfo 会展示打印当前系统所需信息，比如 环境、shell、pnpm、npm 包。
   const info = await envinfo.run(Object.assign({}, {
     System: ['OS', 'Shell'],
     Binaries: ['Node', 'Yarn', 'npm'],

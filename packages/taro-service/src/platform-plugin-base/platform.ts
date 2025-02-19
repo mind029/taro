@@ -8,13 +8,16 @@ interface IWrapper {
   close? (): void
 }
 
+/**
+ * 事务类，用于管理事务包装器
+ */
 export class Transaction<T = TaroPlatform> {
-  wrappers: IWrapper[] = []
+  wrappers: IWrapper[] = [] // 存储事务包装器
 
   async perform (fn: Func, scope: T, ...args: any[]) {
-    this.initAll(scope)
-    await fn.call(scope, ...args)
-    this.closeAll(scope)
+    this.initAll(scope) // 前置操作
+    await fn.call(scope, ...args) // 执行核心逻辑
+    this.closeAll(scope) // 后置操作
   }
 
   initAll (scope: T) {

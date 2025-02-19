@@ -190,6 +190,9 @@ function getNormalRequest (global) {
       )
       : {}
 
+    // eslint-disable-next-line
+    // console.log('taro request', options)
+
     const originSuccess = options.success
     const originFail = options.fail
     const originComplete = options.complete
@@ -200,11 +203,15 @@ function getNormalRequest (global) {
         resolve(res)
       }
       options.fail = res => {
+        // eslint-disable-next-line
+        // console.log('taro request fail', res)
         originFail && originFail(res)
         reject(res)
       }
 
       options.complete = res => {
+        // eslint-disable-next-line
+        // console.log('taro request complete', res)
         originComplete && originComplete(res)
       }
 
@@ -226,6 +233,7 @@ function getNormalRequest (global) {
 
 function processApis (taro, global, config: IProcessApisIOptions = {}) {
   const patchNeedPromiseApis = config.needPromiseApis || []
+  // 得到所有可以包裹成 promise 的 api
   const _needPromiseApis = new Set<string>([...patchNeedPromiseApis, ...needPromiseApis])
   const preserved = [
     'getEnv',
@@ -240,20 +248,32 @@ function processApis (taro, global, config: IProcessApisIOptions = {}) {
     'webpackJsonp'
   ]
 
+  // eslint-disable-next-line
+  // console.log('config.isOnlyPromisify', config.isOnlyPromisify)
+
+  // 得到所有可以包裹成 promise 的 api
   const apis = new Set(
     !config.isOnlyPromisify
       ? Object.keys(global).filter(api => preserved.indexOf(api) === -1)
       : patchNeedPromiseApis
   )
-
+  // 二次修改
   if (config.modifyApis) {
     config.modifyApis(apis)
   }
 
+  // eslint-disable-next-line
+  // console.log('processApis apis', apis)
+  // eslint-disable-next-line
+  // console.log('processApis _needPromiseApis', _needPromiseApis)
+
+  // 把不是 promise 转换成 api
   apis.forEach(key => {
     if (_needPromiseApis.has(key)) {
       const originKey = key
       taro[originKey] = (options: Record<string, any> | string = {}, ...args) => {
+        // eslint-disable-next-line
+        // console.log(`taro.${originKey}() 触发`, options, Date.now())
         let key = originKey
 
         // 第一个参数 options 为字符串，单独处理
@@ -284,6 +304,8 @@ function processApis (taro, global, config: IProcessApisIOptions = {}) {
         // Promise 化
         const p: any = new Promise((resolve, reject) => {
           obj.success = res => {
+            // eslint-disable-next-line
+            // console.log(`taro.${originKey}() success`, res, Date.now())
             config.modifyAsyncResult?.(key, res)
             options.success?.(res)
             if (key === 'connectSocket') {
@@ -295,6 +317,8 @@ function processApis (taro, global, config: IProcessApisIOptions = {}) {
             }
           }
           obj.fail = res => {
+            // eslint-disable-next-line
+            // console.log(`taro.${originKey}() fail`, res, Date.now())
             options.fail?.(res)
             reject(res)
           }
@@ -326,6 +350,8 @@ function processApis (taro, global, config: IProcessApisIOptions = {}) {
     } else {
       let platformKey = key
 
+      // eslint-disable-next-line
+      // console.log('不需要 promise api', platformKey)
       // 改变 key 或 option 字段，如需要把支付宝标准的字段对齐微信标准的字段
       if (config.transformMeta) {
         platformKey = config.transformMeta(key, {}).key

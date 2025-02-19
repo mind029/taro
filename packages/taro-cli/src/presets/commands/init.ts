@@ -1,5 +1,9 @@
 import type { IPluginContext } from '@tarojs/service'
 
+
+/**
+ * taro init 执行的命令
+ */
 export default (ctx: IPluginContext) => {
   ctx.registerCommand({
     name: 'init',
@@ -14,6 +18,12 @@ export default (ctx: IPluginContext) => {
       '--css [css]': 'CSS预处理器(sass/less/stylus/none)',
       '-h, --help': 'output usage information'
     },
+    /**
+     * 1. 获取命令行输出配置
+     * 2. 获取远程模板
+     * 3. 通过 rust 暴露的函数写回到本地
+     * @param opts 参数
+     */
     async fn (opts) {
       // init project
       const { appPath } = ctx.paths

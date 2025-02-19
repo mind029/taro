@@ -1,0 +1,1241 @@
+{
+    "type": "float-area",
+    "_widgets": [
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-cli/bin/taro",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 7,
+                                    "column": 1
+                                },
+                                "position": {
+                                    "lineNumber": 7,
+                                    "column": 1
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 7,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 764.8359375,
+                "height": 450,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-cli/src/cli.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": true,
+                                "selectionStart": {
+                                    "lineNumber": 185,
+                                    "column": 13
+                                },
+                                "position": {
+                                    "lineNumber": 185,
+                                    "column": 20
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 8,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -17
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 256,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 764.8359375,
+                "height": 3404.666745510679,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-service/src/Config.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 64,
+                                    "column": 43
+                                },
+                                "position": {
+                                    "lineNumber": 64,
+                                    "column": 43
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 24,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -14
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 144,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": true
+                        }
+                    }
+                },
+                "width": 1102.1535969219865,
+                "height": 1504.376942338761,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-cli/src/commands/customCommand.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 24,
+                                    "column": 17
+                                },
+                                "position": {
+                                    "lineNumber": 24,
+                                    "column": 17
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 5,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -11
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 34,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 1102.1535969219865,
+                "height": 506.48502723942374,
+                "spacing": 29.955170719657104
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-service/src/Kernel.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 379,
+                                    "column": 38
+                                },
+                                "position": {
+                                    "lineNumber": 379,
+                                    "column": 38
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 444,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -7
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 505,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 764.8359375,
+                "height": 1151.1264447468154,
+                "spacing": 1027.6046242986165
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-service/src/Kernel#1.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": true,
+                                "selectionStart": {
+                                    "lineNumber": 195,
+                                    "column": 3
+                                },
+                                "position": {
+                                    "lineNumber": 195,
+                                    "column": 17
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 142,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -14
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 505,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": true
+                        }
+                    }
+                },
+                "width": 1141.3188749164692,
+                "height": 1046.2558018719287,
+                "spacing": 423.32622050771903
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-cli/src/presets/commands/build.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 121,
+                                    "column": 24
+                                },
+                                "position": {
+                                    "lineNumber": 121,
+                                    "column": 24
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 75,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -8
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 210,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 1141.3188749164692,
+                "height": 1532.0926299728058,
+                "spacing": 352.31248888181483
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-weapp/src/index.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 23,
+                                    "column": 1
+                                },
+                                "position": {
+                                    "lineNumber": 23,
+                                    "column": 1
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -10
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 23,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 764.8359375,
+                "height": 655.4277291993276,
+                "spacing": 1888.7986634941528
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-weapp/src/program.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 43,
+                                    "column": 1
+                                },
+                                "position": {
+                                    "lineNumber": 43,
+                                    "column": 1
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 1,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": 0
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 71,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 849.0274894952665,
+                "height": 946.6758776056058,
+                "spacing": 2058.159996400505
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-service/src/platform-plugin-base/mini.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": true,
+                                "selectionStart": {
+                                    "lineNumber": 210,
+                                    "column": 23
+                                },
+                                "position": {
+                                    "lineNumber": 210,
+                                    "column": 21
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 171,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -4
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 213,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 849.0274894952665,
+                "height": 1592.2783784809967,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-service/src/platform-plugin-base/mini#1.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 169,
+                                    "column": 15
+                                },
+                                "position": {
+                                    "lineNumber": 169,
+                                    "column": 15
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 118,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -1
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 213,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 1100.776807241305,
+                "height": 1042.7499400147274,
+                "spacing": 2569.814480831092
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-webpack5-runner/src/index.mini.ts",
+                            "floatAreaId": "7be53a00-e42b-4f22-8b1e-b22816523b2b"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 21,
+                                    "column": 30
+                                },
+                                "position": {
+                                    "lineNumber": 21,
+                                    "column": 30
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 10,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -11
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 94,
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 1100.776807241305,
+                "height": 1739.7299085106865,
+                "spacing": 0
+            }
+        ]
+    ],
+    "_widths": [
+        764.8359375,
+        1102.1535969219865,
+        764.8359375,
+        1141.3188749164692,
+        764.8359375,
+        849.0274894952665,
+        1100.776807241305
+    ],
+    "_modelData": {
+        "connections": [
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/src/cli.ts",
+                    "lineNumber": 181,
+                    "startColumn": 11,
+                    "endLineNumber": 181,
+                    "endColumn": 24,
+                    "word": "customCommand",
+                    "x": 92,
+                    "y": 3663,
+                    "hide": false,
+                    "height": 18,
+                    "width": 1
+                },
+                "endWord": {
+                    "uri": "packages/taro-cli/src/commands/customCommand.ts",
+                    "lineNumber": 9,
+                    "startColumn": 25,
+                    "endLineNumber": 9,
+                    "endColumn": 38,
+                    "word": "",
+                    "x": 1085.8359474999997,
+                    "y": 1711.3281212499996,
+                    "hide": false,
+                    "height": 18,
+                    "width": 94
+                },
+                "id": "ea0153e5-0b32-4022-8cac-6328fc70e565",
+                "startAnchor": {
+                    "x": 93,
+                    "y": 3671.061999211197
+                },
+                "endAnchor": {
+                    "x": 1128.038510169757,
+                    "y": 1729.3281212499996
+                },
+                "startControl": {
+                    "x": 108.05256309973825,
+                    "y": 3671.061999211197
+                },
+                "endControl": {
+                    "x": 1128.038510169757,
+                    "y": 1768.156240417914
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 1128.038510169757,
+                    "y": 1741.3281212499996
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/src/commands/customCommand.ts",
+                    "word": "run",
+                    "lineNumber": 24,
+                    "startColumn": 12,
+                    "endLineNumber": 24,
+                    "endColumn": 15,
+                    "x": 991.8359474999997,
+                    "y": 1981.3281212499996,
+                    "width": 22,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/Kernel.ts",
+                    "lineNumber": 450,
+                    "startColumn": 9,
+                    "endLineNumber": 450,
+                    "endColumn": 12,
+                    "word": "run",
+                    "x": 2128.984375,
+                    "y": 1188.6015625,
+                    "hide": false,
+                    "height": 18,
+                    "width": 21
+                },
+                "id": "8cb0d218-69ab-467b-acf0-0379f2b9fdbb",
+                "startAnchor": {
+                    "x": 1013.8359474999997,
+                    "y": 1982.656450806194
+                },
+                "endAnchor": {
+                    "x": 2128.984375,
+                    "y": 1204.9245206509054
+                },
+                "startControl": {
+                    "x": 1040.0830868010219,
+                    "y": 1982.656450806194
+                },
+                "endControl": {
+                    "x": 2092.8945584610947,
+                    "y": 1204.9245206509054
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 2116.984375,
+                    "y": 1204.9245206509054
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/src/cli.ts",
+                    "word": "init",
+                    "lineNumber": 86,
+                    "startColumn": 20,
+                    "endLineNumber": 86,
+                    "endColumn": 24,
+                    "x": 229,
+                    "y": 1953,
+                    "width": 29,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/Config.ts",
+                    "lineNumber": 54,
+                    "startColumn": 9,
+                    "endLineNumber": 54,
+                    "endColumn": 13,
+                    "word": "init",
+                    "x": 970.8358968749998,
+                    "y": 585.9999985351562,
+                    "hide": false,
+                    "height": 18,
+                    "width": 29
+                },
+                "id": "ed5669b5-8a5d-4336-af1a-a5b833a7d115",
+                "startAnchor": {
+                    "x": 248.38406954259005,
+                    "y": 1953
+                },
+                "endAnchor": {
+                    "x": 980.4518273324097,
+                    "y": 603.9999985351562
+                },
+                "startControl": {
+                    "x": 248.38406954259005,
+                    "y": 1924.8745353355846
+                },
+                "endControl": {
+                    "x": 980.4518273324097,
+                    "y": 642.6725124487275
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 980.4518273324097,
+                    "y": 615.9999985351562
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-service/src/Kernel.ts",
+                    "word": "initPresetsAndPlugins",
+                    "lineNumber": 469,
+                    "startColumn": 10,
+                    "endLineNumber": 469,
+                    "endColumn": 31,
+                    "x": 2135.984375,
+                    "y": 1530.6015625,
+                    "width": 152,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/Kernel#1.ts",
+                    "lineNumber": 131,
+                    "startColumn": 3,
+                    "endLineNumber": 131,
+                    "endColumn": 24,
+                    "word": "initPresetsAndPlugins",
+                    "x": 2891.8203125,
+                    "y": 483.3203125,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "152db8fb-48df-414f-97c2-1989b7efb5ae",
+                "startAnchor": {
+                    "x": 2217.7838940173156,
+                    "y": 1530.6015625
+                },
+                "endAnchor": {
+                    "x": 2891.998116999038,
+                    "y": 484.3203125
+                },
+                "startControl": {
+                    "x": 2217.7838940173156,
+                    "y": 1503.7026348259874
+                },
+                "endControl": {
+                    "x": 2891.998116999038,
+                    "y": 521.3063380517672
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 2891.998116999038,
+                    "y": 496.3203125
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-service/src/Kernel.ts",
+                    "word": "applyPlugins",
+                    "lineNumber": 499,
+                    "startColumn": 16,
+                    "endLineNumber": 499,
+                    "endColumn": 28,
+                    "x": 2178.984375,
+                    "y": 2070.6015625,
+                    "width": 87,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-cli/src/presets/commands/build.ts",
+                    "lineNumber": 47,
+                    "startColumn": 11,
+                    "endLineNumber": 47,
+                    "endColumn": 13,
+                    "word": "fn",
+                    "x": 2891.820218749999,
+                    "y": 1937.8906171874996,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "1ccdd08a-4f28-4948-a43d-72a6ee8ef8e5",
+                "startAnchor": {
+                    "x": 2265.1759849202426,
+                    "y": 2070.6015625
+                },
+                "endAnchor": {
+                    "x": 2891.820218749999,
+                    "y": 1938.4960243157013
+                },
+                "startControl": {
+                    "x": 2265.1759849202426,
+                    "y": 2064.0005940644187
+                },
+                "endControl": {
+                    "x": 2848.7665289579923,
+                    "y": 1938.4960243157013
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 2879.820218749999,
+                    "y": 1938.4960243157013
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/src/presets/commands/build.ts",
+                    "word": "applyPlugins",
+                    "lineNumber": 111,
+                    "startColumn": 17,
+                    "endLineNumber": 111,
+                    "endColumn": 29,
+                    "x": 3007.820218749999,
+                    "y": 2577.8906171874996,
+                    "width": 86,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-weapp/src/index.ts",
+                    "lineNumber": 16,
+                    "startColumn": 11,
+                    "endLineNumber": 16,
+                    "endColumn": 13,
+                    "word": "fn",
+                    "x": 4161.140625,
+                    "y": 2208.796875,
+                    "hide": false,
+                    "height": 18,
+                    "width": 15
+                },
+                "id": "30b39955-966b-492f-b78f-ad46e73063ed",
+                "startAnchor": {
+                    "x": 3078.0772066269146,
+                    "y": 2577.8906171874996
+                },
+                "endAnchor": {
+                    "x": 4161.140625,
+                    "y": 2220.273304174963
+                },
+                "startControl": {
+                    "x": 3078.0772066269146,
+                    "y": 2567.857317113185
+                },
+                "endControl": {
+                    "x": 4119.359334397202,
+                    "y": 2220.273304174963
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 4149.140625,
+                    "y": 2220.273304174963
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-weapp/src/index.ts",
+                    "lineNumber": 18,
+                    "startColumn": 27,
+                    "endLineNumber": 18,
+                    "endColumn": 32,
+                    "word": "Weapp",
+                    "x": 4277.140625,
+                    "y": 2244.796875,
+                    "hide": false,
+                    "height": 18,
+                    "width": 36
+                },
+                "endWord": {
+                    "uri": "packages/taro-weapp/src/program.ts",
+                    "lineNumber": 10,
+                    "startColumn": 22,
+                    "endLineNumber": 10,
+                    "endColumn": 27,
+                    "word": "",
+                    "x": 5061.9765625,
+                    "y": 2280.15625,
+                    "hide": false,
+                    "height": 18,
+                    "width": 36
+                },
+                "id": "64460c7e-2ba4-4bfe-8e15-9f3a8ed70f71",
+                "startAnchor": {
+                    "x": 4313.140625,
+                    "y": 2254.607832704138
+                },
+                "endAnchor": {
+                    "x": 5061.9765625,
+                    "y": 2288.345292295862
+                },
+                "startControl": {
+                    "x": 4345.10819769553,
+                    "y": 2254.607832704138
+                },
+                "endControl": {
+                    "x": 5018.021150043646,
+                    "y": 2288.345292295862
+                },
+                "arrow": {
+                    "angle": 0,
+                    "x": 5049.9765625,
+                    "y": 2288.345292295862
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-weapp/src/index.ts",
+                    "word": "start",
+                    "lineNumber": 19,
+                    "startColumn": 21,
+                    "endLineNumber": 19,
+                    "endColumn": 26,
+                    "x": 4234.140625,
+                    "y": 2262.796875,
+                    "width": 36,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini.ts",
+                    "lineNumber": 208,
+                    "startColumn": 16,
+                    "endLineNumber": 208,
+                    "endColumn": 21,
+                    "word": "start",
+                    "x": 5017.9765625,
+                    "y": 3782.8359375,
+                    "hide": false,
+                    "height": 18,
+                    "width": 37
+                },
+                "id": "963b1035-fdad-499f-8a8a-21f10a2d3b9b",
+                "startAnchor": {
+                    "x": 4256.784600021201,
+                    "y": 2280.796875
+                },
+                "endAnchor": {
+                    "x": 5031.832587478799,
+                    "y": 3782.8359375
+                },
+                "startControl": {
+                    "x": 4256.784600021201,
+                    "y": 2309.234263513492
+                },
+                "endControl": {
+                    "x": 5031.832587478799,
+                    "y": 3743.7345282939486
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 5031.832587478799,
+                    "y": 3770.8359375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/bin/taro",
+                    "word": "run",
+                    "lineNumber": 6,
+                    "startColumn": 11,
+                    "endLineNumber": 6,
+                    "endColumn": 14,
+                    "x": 164,
+                    "y": 150,
+                    "width": 22,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-cli/src/cli.ts",
+                    "lineNumber": 18,
+                    "startColumn": 3,
+                    "endLineNumber": 18,
+                    "endColumn": 6,
+                    "word": "run",
+                    "x": 106,
+                    "y": 729,
+                    "hide": false,
+                    "height": 18,
+                    "width": 22
+                },
+                "id": "deb9ee43-ca3b-47e9-9e61-6ab20a8e5036",
+                "startAnchor": {
+                    "x": 174.0984455958549,
+                    "y": 168
+                },
+                "endAnchor": {
+                    "x": 117.90155440414507,
+                    "y": 729
+                },
+                "startControl": {
+                    "x": 174.0984455958549,
+                    "y": 199.84064514120632
+                },
+                "endControl": {
+                    "x": 117.90155440414507,
+                    "y": 685.2191129308413
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 117.90155440414507,
+                    "y": 717
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-cli/src/cli.ts",
+                    "word": "parseArgs",
+                    "lineNumber": 19,
+                    "startColumn": 17,
+                    "endLineNumber": 19,
+                    "endColumn": 26,
+                    "x": 208,
+                    "y": 747,
+                    "width": 65,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-cli/src/cli.ts",
+                    "lineNumber": 22,
+                    "startColumn": 9,
+                    "endLineNumber": 22,
+                    "endColumn": 18,
+                    "word": "parseArgs",
+                    "x": 150,
+                    "y": 801,
+                    "hide": false,
+                    "height": 18,
+                    "width": 65
+                },
+                "id": "2d8fa5c0-b6c0-49e5-9576-9a35ca5f2508",
+                "startAnchor": {
+                    "x": 230.83333333333331,
+                    "y": 765
+                },
+                "endAnchor": {
+                    "x": 192.16666666666669,
+                    "y": 801
+                },
+                "startControl": {
+                    "x": 230.83333333333331,
+                    "y": 765
+                },
+                "endControl": {
+                    "x": 192.16666666666669,
+                    "y": 801
+                },
+                "arrow": {
+                    "angle": 2.3918936028716686,
+                    "x": 200.94939435984287,
+                    "y": 792.8229776649739
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini.ts",
+                    "word": "build",
+                    "lineNumber": 210,
+                    "startColumn": 16,
+                    "endLineNumber": 210,
+                    "endColumn": 21,
+                    "x": 5017.976562499999,
+                    "y": 3818.8359218749993,
+                    "width": 37,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini#1.ts",
+                    "lineNumber": 153,
+                    "startColumn": 17,
+                    "endLineNumber": 153,
+                    "endColumn": 22,
+                    "word": "build",
+                    "x": 5931.0078125,
+                    "y": 3258.8125,
+                    "hide": false,
+                    "height": 18,
+                    "width": 36
+                },
+                "id": "613c37a7-9b80-48d3-8315-0a2dfc68c1a8",
+                "startAnchor": {
+                    "x": 5051.141629940398,
+                    "y": 3818.8359218749993
+                },
+                "endAnchor": {
+                    "x": 5934.342745059601,
+                    "y": 3276.8125
+                },
+                "startControl": {
+                    "x": 5051.141629940398,
+                    "y": 3802.098077034594
+                },
+                "endControl": {
+                    "x": 5934.342745059601,
+                    "y": 3299.827036655557
+                },
+                "arrow": {
+                    "angle": -1.5707963267948966,
+                    "x": 5934.342745059601,
+                    "y": 3288.8125
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini#1.ts",
+                    "word": "buildImpl",
+                    "lineNumber": 155,
+                    "startColumn": 46,
+                    "endLineNumber": 155,
+                    "endColumn": 55,
+                    "x": 6140.0078125,
+                    "y": 3294.8125,
+                    "width": 65,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini#1.ts",
+                    "lineNumber": 158,
+                    "startColumn": 17,
+                    "endLineNumber": 158,
+                    "endColumn": 26,
+                    "word": "buildImpl",
+                    "x": 5931.0078125,
+                    "y": 3348.8125,
+                    "hide": false,
+                    "height": 18,
+                    "width": 65
+                },
+                "id": "eaa1a2fa-1af5-4f5c-9976-884272a0b8e4",
+                "startAnchor": {
+                    "x": 6140.0078125,
+                    "y": 3312.209629186603
+                },
+                "endAnchor": {
+                    "x": 5996.0078125,
+                    "y": 3349.415370813397
+                },
+                "startControl": {
+                    "x": 6109.02525345882,
+                    "y": 3312.209629186603
+                },
+                "endControl": {
+                    "x": 6038.608831181623,
+                    "y": 3349.415370813397
+                },
+                "arrow": {
+                    "angle": 3.141592653589793,
+                    "x": 6008.0078125,
+                    "y": 3349.415370813397
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "packages/taro-service/src/platform-plugin-base/mini#1.ts",
+                    "word": "runner",
+                    "lineNumber": 169,
+                    "startColumn": 11,
+                    "endLineNumber": 169,
+                    "endColumn": 17,
+                    "x": 5887.0078125,
+                    "y": 3546.8125,
+                    "width": 44,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-webpack5-runner/src/index.mini.ts",
+                    "lineNumber": 13,
+                    "startColumn": 31,
+                    "endLineNumber": 13,
+                    "endColumn": 36,
+                    "word": "build",
+                    "x": 6032.0078125,
+                    "y": 3771.5625,
+                    "hide": false,
+                    "height": 18,
+                    "width": 36
+                },
+                "id": "f5f1ce36-973c-4830-9b72-f4b3b082aa80",
+                "startAnchor": {
+                    "x": 5914.654086137375,
+                    "y": 3564.8125
+                },
+                "endAnchor": {
+                    "x": 6044.361538862625,
+                    "y": 3771.5625
+                },
+                "startControl": {
+                    "x": 5914.654086137375,
+                    "y": 3591.919609266783
+                },
+                "endControl": {
+                    "x": 6044.361538862625,
+                    "y": 3734.2902247581733
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 6044.361538862625,
+                    "y": 3759.5625
+                }
+            }
+        ],
+        "annotations": [
+            {
+                "uri": "packages/taro-cli/bin/taro",
+                "lineNumber": 7,
+                "column": 1,
+                "id": "3e1bc600-6992-4e62-96ac-22bd2ffb2536",
+                "relativeX": 250.04701878358014,
+                "relativeY": 103.03200773978423,
+                "content": "taro build --type weapp\n执行流程",
+                "width": 192,
+                "height": 46
+            }
+        ],
+        "highlights": []
+    }
+}

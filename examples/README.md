@@ -12,3 +12,4 @@
 - external-prebundle: 第三方使用 PreBundle 特性
 - mini-split-chunks-plugin: 智能提取分包依赖
 - weapp-independent-subpackages: 微信小程序独立分包功能演示
+- weapp-react 专门用于 react 调试

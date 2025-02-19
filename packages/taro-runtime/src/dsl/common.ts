@@ -210,7 +210,7 @@ export function createPageConfig (component: any, pageName?: string, data?: Reco
         }
         // 触发生命周期
         safeExecute(this.$taroPath, ON_SHOW, options)
-        // 通过事件触发子组件的生命周期
+        // // 通过事件触发子组件的生命周期
         raf(() => eventCenter.trigger(getOnShowEventKey(id)))
       })
     },
@@ -280,6 +280,7 @@ export function createPageConfig (component: any, pageName?: string, data?: Reco
     config.data = data
   }
 
+  // 这里可以修改页面生命周期相关数据
   hooks.call('modifyPageObject', config)
 
   return config

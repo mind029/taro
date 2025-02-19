@@ -5,3 +5,4 @@ packages:
   - 'npm/**'
   - 'crates/native_binding'
   - 'examples/mini-program-example'
+  - 'examples/weapp-react'

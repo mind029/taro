@@ -3,6 +3,7 @@ import * as hooks from '../constant'
 import type { IPluginContext } from '@tarojs/service'
 
 export default (ctx: IPluginContext) => {
+  // 这是 tapable 注册的构造名。
   [
     hooks.MODIFY_APP_CONFIG,
     hooks.MODIFY_WEBPACK_CHAIN,

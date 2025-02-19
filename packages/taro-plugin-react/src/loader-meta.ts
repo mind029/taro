@@ -97,6 +97,7 @@ class App extends React.Component {
 }
 `,
     frameworkArgs: 'React, ReactDOM, config',
+    // 触发器 createReactApp
     creator: 'createReactApp',
     creatorLocation: '@tarojs/plugin-framework-react/dist/runtime',
     importFrameworkName: 'React',

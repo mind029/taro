@@ -1,0 +1,17 @@
+"overrides": {
+  "@tarojs/helper": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-helper",
+  "@tarojs/plugin-platform-weapp": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-weapp",
+  "@tarojs/runtime": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-runtime",
+  "@tarojs/shared": "/Users/mind/Workspace/github.com/NervJS/taro/packages/shared",
+  "@tarojs/taro": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro",
+  "@tarojs/plugin-framework-react": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-plugin-react",
+  "@tarojs/react": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-react",
+  "@tarojs/cli": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-cli",
+  "@tarojs/taro-loader": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-loader",
+  "@tarojs/webpack5-runner": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-webpack5-runner"
+}
+}
+
+
+"@tarojs/runtime": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro-runtime",
+  "@tarojs/taro": "/Users/mind/Workspace/github.com/NervJS/taro/packages/taro",

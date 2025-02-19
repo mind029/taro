@@ -10,6 +10,8 @@ export class Events {
   }
 
   on (eventName: EventName, callback: (...args: any[]) => void, context?: any): this {
+    // eslint-disable-next-line
+    // console.log('Events on', eventName, callback, context)
     let event: EventName | undefined, tail, _eventName: EventName[]
     if (!callback) {
       return this

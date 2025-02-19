@@ -1,0 +1,40 @@
+{
+  "name": "@tarojs/taro-plugin-monitor",
+  "version": "3.6.35",
+  "description": "Taro 小程序端平台中间层插件，收集生命周期、事件、错误等数据",
+  "author": "mind",
+  "homepage": "https://github.com/nervjs/taro",
+  "license": "MIT",
+  "main": "index.js",
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "taro",
+    "monitor"
+  ],
+  "files": [
+    "index.js",
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lixinio.com:frontend/lx-basic.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "@tarojs/service": "workspace:*",
+    "@tarojs/shared": "workspace:*",
+    "@tarojs/helper": "workspace:*"
+  },
+  "devDependencies": {
+    "rollup": "^2.79.0",
+    "rollup-plugin-ts": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  }
+}

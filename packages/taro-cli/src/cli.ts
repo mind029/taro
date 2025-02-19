@@ -20,6 +20,7 @@ export default class CLI {
   }
 
   async parseArgs () {
+    // 解析得到 cli 参数
     const args = minimist(process.argv.slice(2), {
       alias: {
         version: ['v'],
@@ -42,6 +43,7 @@ export default class CLI {
     const _ = args._
     const command = _[0]
     if (command) {
+      // 下面这些命令是得到预设和本次命令插件执行路径
       const appPath = this.appPath
       const presetsPath = path.resolve(__dirname, 'presets')
       const commandsPath = path.resolve(presetsPath, 'commands')
@@ -50,6 +52,7 @@ export default class CLI {
       const targetPlugin = `${command}.js`
 
       // 设置环境变量
+      // 等效与：process.env.NODE_ENV = process.env.NODE_ENV || args.env
       process.env.NODE_ENV ||= args.env
       if (process.env.NODE_ENV === 'undefined' && (command === 'build' || command === 'inspect')) {
         process.env.NODE_ENV = (args.watch ? 'development' : 'production')
@@ -71,15 +74,23 @@ export default class CLI {
         mode,
         command,
       }
+      // 2、传入项目 appPath 得到配置实例，目的是加载解析 项目 config 下的配置文件
+      // 目的是加载解析 项目 this.appPath/config 下的配置文件
+      // 用于加载注册用户 在 config/index.ts 里面插件、设置等等。
       const config = new Config({
         appPath: this.appPath,
         disableGlobalConfig: disableGlobalConfig
       })
+
+      // 3、config.init() 加载 appPath/config/index.js 对应的配置文件。
       await config.init(configEnv)
 
+      // 用于动态加载和执行 config/预设 中暴露的插件和命令等
+      // 4、创建内核实例 new Kernel()，用于后续加载 预设、config中的插件等。已经控制运行流程。
       const kernel = new Kernel({
         appPath,
         presets: [
+          // 默认预设
           path.resolve(__dirname, '.', 'presets', 'index.js')
         ],
         config,
@@ -87,27 +98,31 @@ export default class CLI {
       })
       kernel.optsPlugins ||= []
 
-      // 将自定义的 变量 添加到 config.env 中，实现 definePlugin 字段定义
       const initialConfig = kernel.config?.initialConfig
+      // 5、把项目中 env 环境配置对象，赋值到 项目配置文件中。
       if (initialConfig) {
         initialConfig.env = patchEnv(initialConfig, expandEnv)
       }
       if (command === 'doctor') {
         kernel.optsPlugins.push('@tarojs/plugin-doctor')
       } else if (commandPlugins.includes(targetPlugin)) {
-        // 针对不同的内置命令注册对应的命令插件
+        // 执行命令的时候，判断如果不是 doctor 命令，则把 命令作为 kernel 默认插件。
+        // 插件对应路径：packages/taro-cli/src/presets/commands/xxx.js
+        // 举例：taro build 执行命令的时候，会执行 packages/taro-cli/src/presets/commands/build.js 文件。
         kernel.optsPlugins.push(path.resolve(commandsPath, targetPlugin))
       }
 
-      // 把内置命令插件传递给 kernel，可以暴露给其他插件使用
+      // 7、把内置预设命令插件传递给 kernel，可以暴露给其他插件使用
       kernel.cliCommandsPath = commandsPath
       kernel.cliCommands = commandPlugins
         .filter(commandFileName => /^[\w-]+(\.[\w-]+)*\.js$/.test(commandFileName))
         .map(fileName => fileName.replace(/\.js$/, ''))
 
+      // 8、根据 cli 命令：taro build -type=weapp 动态调用
       switch (command) {
         case 'inspect':
         case 'build': {
+          // 9、taro build 构建
           let plugin
           let platform = args.type
           const { publicPath, bundleOutput, sourcemapOutput, sourceMapUrl, sourcemapSourcesRoot, assetsDest } = args
@@ -122,6 +137,7 @@ export default class CLI {
             case 'jd':
             case 'h5':
             case 'harmony-hybrid':
+              // 10、根据构建命令参数 传入 type，kernel 动态注册对应的端平台插件。用于后续 run 时候加载。
               kernel.optsPlugins.push(`@tarojs/plugin-platform-${platform}`)
               break
             default: {
@@ -134,8 +150,7 @@ export default class CLI {
               break
             }
           }
-
-          // 根据 framework 启用插件
+          // 11、根据 appPath/config/index.js 中 framework 字段，动态注册对应的端平台框架插件。
           const framework = kernel.config?.initialConfig.framework || DEFAULT_FRAMEWORK
           const frameworkMap = {
             vue: '@tarojs/plugin-framework-vue2',
@@ -148,7 +163,7 @@ export default class CLI {
             kernel.optsPlugins.push(frameworkMap[framework])
           }
 
-          // 编译小程序插件
+          // 12、 判断是额外否有插件参数
           if (typeof args.plugin === 'string') {
             plugin = args.plugin
             platform = 'plugin'
@@ -164,6 +179,7 @@ export default class CLI {
             break
           }
 
+          // 13、customCommand 执行命令函数
           customCommand(command, kernel, {
             _,
             platform,

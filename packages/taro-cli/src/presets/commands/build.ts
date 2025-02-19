@@ -8,6 +8,7 @@ import * as hooks from '../constant'
 import type { IPluginContext } from '@tarojs/service'
 
 export default (ctx: IPluginContext) => {
+  // 24、注册 build 插件 ,ctx 调用了 ctx.registerCommand
   ctx.registerCommand({
     name: 'build',
     optionsMap: {
@@ -44,6 +45,7 @@ export default (ctx: IPluginContext) => {
       'taro build --type weapp --mode prepare --env-prefix TARO_APP_',
     ],
     async fn (opts) {
+      // 47、执行 build fn 的函数
       const { options, config, _ } = opts
       const { platform, isWatch, blended, newBlended, withoutBuild } = options
       const { fs, chalk, PROJECT_CONFIG } = ctx.helper
@@ -102,7 +104,10 @@ export default (ctx: IPluginContext) => {
       // is build native components mode?
       const isBuildNativeComp = _[1] === 'native-components'
 
+      // 48、触发 hooks.ON_BUILD_START 钩子注册的所有函数
       await ctx.applyPlugins(hooks.ON_BUILD_START)
+
+      // 49、执行对应 fn
       await ctx.applyPlugins({
         name: platform,
         opts: {

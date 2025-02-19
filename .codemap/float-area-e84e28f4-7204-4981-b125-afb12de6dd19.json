@@ -1,0 +1,257 @@
+{
+    "type": "float-area",
+    "_widgets": [
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "examples/weapp-react/src/pages/index/index.tsx",
+                            "floatAreaId": "e84e28f4-7204-4981-b125-afb12de6dd19"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 30,
+                                    "column": 5
+                                },
+                                "position": {
+                                    "lineNumber": 30,
+                                    "column": 5
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 5,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -12
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 106,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 685.359375,
+                "spacing": 0
+            },
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-plugin-monitor/src/runtime.ts",
+                            "floatAreaId": "e84e28f4-7204-4981-b125-afb12de6dd19"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 161,
+                                    "column": 19
+                                },
+                                "position": {
+                                    "lineNumber": 161,
+                                    "column": 19
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 326,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -11
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 354,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 450,
+                "spacing": 0
+            }
+        ],
+        [
+            {
+                "widget": {
+                    "constructionOptions": {
+                        "factoryId": "code-editor-opener",
+                        "options": {
+                            "kind": "navigatable",
+                            "uri": "packages/taro-runtime/src/dom/event.ts",
+                            "floatAreaId": "e84e28f4-7204-4981-b125-afb12de6dd19"
+                        }
+                    },
+                    "innerWidgetState": {
+                        "cursorState": [
+                            {
+                                "inSelectionMode": false,
+                                "selectionStart": {
+                                    "lineNumber": 177,
+                                    "column": 28
+                                },
+                                "position": {
+                                    "lineNumber": 177,
+                                    "column": 28
+                                }
+                            }
+                        ],
+                        "viewState": {
+                            "scrollLeft": 0,
+                            "firstPosition": {
+                                "lineNumber": 152,
+                                "column": 1
+                            },
+                            "firstPositionDeltaTop": -10
+                        },
+                        "contributionsState": {
+                            "editor.contrib.folding": {
+                                "lineCount": 211,
+                                "provider": "syntax",
+                                "foldedImports": false
+                            },
+                            "editor.contrib.wordHighlighter": false
+                        }
+                    }
+                },
+                "width": 600,
+                "height": 726.8359375,
+                "spacing": 0
+            }
+        ]
+    ],
+    "_widths": [
+        600,
+        600
+    ],
+    "_modelData": {
+        "connections": [
+            {
+                "startWord": {
+                    "uri": "packages/taro-runtime/src/dom/event.ts",
+                    "word": "dispatchTaroEventFinish",
+                    "lineNumber": 182,
+                    "startColumn": 19,
+                    "endLineNumber": 182,
+                    "endColumn": 42,
+                    "x": 878,
+                    "y": 590,
+                    "width": 166,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-plugin-monitor/src/runtime.ts",
+                    "lineNumber": 332,
+                    "startColumn": 3,
+                    "endLineNumber": 332,
+                    "endColumn": 26,
+                    "word": "dispatchTaroEventFinish",
+                    "x": 106,
+                    "y": 898.359375,
+                    "hide": false,
+                    "height": 18,
+                    "width": 167
+                },
+                "id": "f76f226b-8995-4463-94e3-536625e42eb9",
+                "startAnchor": {
+                    "x": 938.4824423612871,
+                    "y": 608
+                },
+                "endAnchor": {
+                    "x": 212.01755763871296,
+                    "y": 898.359375
+                },
+                "startControl": {
+                    "x": 938.4824423612871,
+                    "y": 619.8765118073945
+                },
+                "endControl": {
+                    "x": 212.01755763871296,
+                    "y": 882.0291712648325
+                },
+                "arrow": {
+                    "angle": 1.5707963267948966,
+                    "x": 212.01755763871296,
+                    "y": 886.359375
+                }
+            },
+            {
+                "startWord": {
+                    "uri": "examples/weapp-react/src/pages/index/index.tsx",
+                    "word": "getSystemInfoSync",
+                    "lineNumber": 37,
+                    "startColumn": 26,
+                    "endLineNumber": 37,
+                    "endColumn": 43,
+                    "x": 273,
+                    "y": 624,
+                    "width": 123,
+                    "height": 18,
+                    "hide": false
+                },
+                "endWord": {
+                    "uri": "packages/taro-plugin-monitor/src/runtime.ts",
+                    "lineNumber": 161,
+                    "startColumn": 9,
+                    "endLineNumber": 161,
+                    "endColumn": 21,
+                    "word": "triggerEvent",
+                    "x": 92,
+                    "y": 801.359375,
+                    "hide": true,
+                    "height": 1,
+                    "width": 1
+                },
+                "id": "3900db10-526e-4862-bab8-6919be660223",
+                "startAnchor": {
+                    "x": 321.60169334690477,
+                    "y": 642
+                },
+                "endAnchor": {
+                    "x": 93,
+                    "y": 801.5104919938017
+                },
+                "startControl": {
+                    "x": 321.60169334690477,
+                    "y": 660.3114277796068
+                },
+                "endControl": {
+                    "x": 129.08403497682124,
+                    "y": 801.5104919938017
+                },
+                "arrow": {
+                    "angle": 3.141592653589793,
+                    "x": 105,
+                    "y": 801.5104919938017
+                }
+            }
+        ],
+        "annotations": [],
+        "highlights": []
+    }
+}

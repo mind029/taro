@@ -4,7 +4,7 @@
   "description": "taro runtime for mini apps.",
   "browser": "dist/index.js",
   "main:h5": "dist/runtime.esm.js",
-  "main": "dist/runtime.esm.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/runtime.esm.js",
   "types": "./dist/runtime.esm.d.ts",
   "files": [

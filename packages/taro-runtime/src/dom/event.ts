@@ -170,7 +170,6 @@ export function eventHandler (event: MpEvent) {
   if (node) {
     const dispatch = () => {
       const e = createEvent(event, node)
-
       hooks.call('modifyTaroEvent', e, node)
       hooks.call('dispatchTaroEvent', e, node)
       hooks.call('dispatchTaroEventFinish', e, node)
@@ -178,6 +177,7 @@ export function eventHandler (event: MpEvent) {
     if (hooks.isExist('batchedEventUpdates')) {
       const type = event.type
 
+      // 这里处理 catchMove 组织滚动穿透
       if (
         !hooks.call('isBubbleEvents', type) ||
         !isParentBinded(node, type) ||
